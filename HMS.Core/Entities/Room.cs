@@ -11,5 +11,5 @@ public class Room : BaseEntity
     public decimal ChargesPerDay { get; set; }
     public string RoomStatus { get; set; } = "Available";
 
-    public virtual ICollection<Admission> Admissions { get; set; } = new List<Admission>()
+    public virtual ICollection<Admission> Admissions { get; set; } = new List<Admission>();
 }

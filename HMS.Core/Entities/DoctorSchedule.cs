@@ -3,6 +3,7 @@ namespace HMS.Core.Entities;
 
 public class DoctorSchedule : BaseEntity
 {
+    [Key]
     public int ScheduleId { get; set; }
     public Guid DoctorId { get; set; }
 

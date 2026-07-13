@@ -3,6 +3,7 @@ namespace HMS.Core.Entities;
 
 public class AuditLog : BaseEntity
 {
+    [Key]
     public Guid AuditId { get; set; }
     public Guid UserId { get; set; }
 

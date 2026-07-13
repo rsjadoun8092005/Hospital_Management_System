@@ -3,6 +3,7 @@ namespace HMS.Core.Entities;
 
 public class LabReport : BaseEntity
 {
+    [Key]
     public Guid ReportId { get; set; }
     public Guid LabTestId { get; set; }
 

@@ -30,4 +30,11 @@
     <ProjectReference Include="..\HMS.Core\HMS.Core.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Extensions\" />
+    <Folder Include="Migrations\" />
+    <Folder Include="Repositories\" />
+    <Folder Include="Services\AI\" />
+  </ItemGroup>
+
 </Project>
