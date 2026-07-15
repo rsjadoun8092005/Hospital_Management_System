@@ -25,4 +25,10 @@
     <ProjectReference Include="..\HMS.Infrastructure\HMS.Infrastructure.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Attributes\" />
+    <Folder Include="Controllers\" />
+    <Folder Include="www\" />
+  </ItemGroup>
+
 </Project>

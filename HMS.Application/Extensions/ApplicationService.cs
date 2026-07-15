@@ -6,7 +6,7 @@
         {
             var assembly = Assembly.GetExecutingAssembly();
 
-            services.AddAutoMapper(assembly);
+            services.AddAutoMapper(cfg => { }, assembly);
 
             services.AddValidatorsFromAssembly(assembly);
 

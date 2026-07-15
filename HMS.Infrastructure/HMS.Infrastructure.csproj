@@ -7,19 +7,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Include="obj\Debug\net8.0\.NETCoreApp,Version=v8.0.AssemblyAttributes.cs" />
-    <Compile Include="obj\Debug\net8.0\HMS.Infrastructure.AssemblyInfo.cs" />
-    <Compile Include="obj\Debug\net8.0\HMS.Infrastructure.GlobalUsings.g.cs" />
-    <Compile Include="obj\Release\net8.0\.NETCoreApp,Version=v8.0.AssemblyAttributes.cs" />
-    <Compile Include="obj\Release\net8.0\HMS.Infrastructure.AssemblyInfo.cs" />
-    <Compile Include="obj\Release\net8.0\HMS.Infrastructure.GlobalUsings.g.cs" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Content Include="obj\Debug\net8.0\HMS.Infrastructure.csproj.FileListAbsolute.txt" />
-    <Content Include="obj\Debug\net8.0\HMS.Infrastructure.sourcelink.json" />
-    <Content Include="obj\HMS.Infrastructure.csproj.nuget.dgspec.json" />
-    <Content Include="obj\project.assets.json" />
+    <Compile Remove="obj\**" />
+    <EmbeddedResource Remove="obj\**" />
+    <None Remove="obj\**" />
   </ItemGroup>
 
   <ItemGroup>
@@ -49,32 +39,8 @@
   <ItemGroup>
     <Folder Include="Extensions\" />
     <Folder Include="Migrations\" />
-    <Folder Include="obj\Release\net8.0\refint\" />
-    <Folder Include="obj\Release\net8.0\ref\" />
     <Folder Include="Repositories\" />
     <Folder Include="Services\AI\" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Include="obj\Debug\net8.0\HMS.Infr.D1046C3A.Up2Date" />
-    <None Include="obj\Debug\net8.0\HMS.Infrastructure.AssemblyInfoInputs.cache" />
-    <None Include="obj\Debug\net8.0\HMS.Infrastructure.assets.cache" />
-    <None Include="obj\Debug\net8.0\HMS.Infrastructure.csproj.AssemblyReference.cache" />
-    <None Include="obj\Debug\net8.0\HMS.Infrastructure.csproj.CoreCompileInputs.cache" />
-    <None Include="obj\Debug\net8.0\HMS.Infrastructure.dll" />
-    <None Include="obj\Debug\net8.0\HMS.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig" />
-    <None Include="obj\Debug\net8.0\HMS.Infrastructure.genruntimeconfig.cache" />
-    <None Include="obj\Debug\net8.0\HMS.Infrastructure.pdb" />
-    <None Include="obj\Debug\net8.0\refint\HMS.Infrastructure.dll" />
-    <None Include="obj\Debug\net8.0\ref\HMS.Infrastructure.dll" />
-    <None Include="obj\HMS.Infrastructure.csproj.EntityFrameworkCore.targets" />
-    <None Include="obj\HMS.Infrastructure.csproj.nuget.g.props" />
-    <None Include="obj\HMS.Infrastructure.csproj.nuget.g.targets" />
-    <None Include="obj\project.nuget.cache" />
-    <None Include="obj\Release\net8.0\HMS.Infrastructure.AssemblyInfoInputs.cache" />
-    <None Include="obj\Release\net8.0\HMS.Infrastructure.assets.cache" />
-    <None Include="obj\Release\net8.0\HMS.Infrastructure.csproj.AssemblyReference.cache" />
-    <None Include="obj\Release\net8.0\HMS.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig" />
   </ItemGroup>
 
 </Project>

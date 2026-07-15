@@ -22,6 +22,6 @@ public class Patient : BaseEntity
     public string? MedicalHistory { get; set; }
 
     public virtual User User { get; set; } = null!;
-    public virtual Address Address { get; set; }
+    public virtual Address? Address { get; set; }
     public virtual ICollection<Appointment> Appointments { get; set; } = new List<Appointment>();
 }
