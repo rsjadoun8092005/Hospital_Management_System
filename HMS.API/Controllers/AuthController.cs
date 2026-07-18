@@ -25,5 +25,20 @@
 
             return Ok(response);
         }
+
+        [HttpPost("Login")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        public async Task<IActionResult> Login([FromBody] LoginCommand command)
+        {
+            var response = await _mediator.Send(command);
+            if (!response.Success)
+            {
+                return BadRequest(response);
+            }
+            return Ok(response);
+        }
+
+
     }
 }
