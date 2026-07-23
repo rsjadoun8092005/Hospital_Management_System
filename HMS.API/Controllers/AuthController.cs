@@ -6,39 +6,30 @@
     {
         private readonly IMediator _mediator;
 
-        public AuthController(IMediator mediator)
-        {
-            _mediator = mediator;
-        }
+        public AuthController(IMediator mediator) => _mediator = mediator;
 
         [HttpPost("register")]
-        [ProducesResponseType(StatusCodes.Status200OK)]
-        [ProducesResponseType(StatusCodes.Status400BadRequest)]
         public async Task<IActionResult> Register([FromBody] CreateApplicationUserCommand command)
         {
             var response = await _mediator.Send(command);
 
-            if (!response.Success)
-            {
-                return BadRequest(response);
-            }
-
-            return Ok(response);
+            return response.Success ? Ok(response) : BadRequest(response);
         }
 
         [HttpPost("Login")]
-        [ProducesResponseType(StatusCodes.Status200OK)]
-        [ProducesResponseType(StatusCodes.Status400BadRequest)]
         public async Task<IActionResult> Login([FromBody] LoginCommand command)
         {
             var response = await _mediator.Send(command);
-            if (!response.Success)
-            {
-                return BadRequest(response);
-            }
-            return Ok(response);
+
+            return response.Success ? Ok(response) : BadRequest(response);
         }
 
+        [HttpPost("forgot-password")]
+        public async Task<IActionResult> ForgotPassword([FromBody] ForgotPasswordCommand command)
+        {
+            var response = await _mediator.Send(command);
 
+            return response.Success ? Ok(response) : BadRequest(response);
+        }
     }
 }
